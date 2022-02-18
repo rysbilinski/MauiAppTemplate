@@ -1,0 +1,25 @@
+﻿<Application
+    x:Class="MauiBasicTemplate.App"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiBasicTemplate">
+    <Application.Resources>
+        <ResourceDictionary>
+            <Color x:Key="BackgroundGray">#F2F1F6</Color>
+            <Color x:Key="PrimaryColor">#FF4674</Color>
+            <Color x:Key="SecondaryColor">#252B33</Color>
+
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+            </Style>
+
+            <Style TargetType="Button">
+                <Setter Property="TextColor" Value="{DynamicResource SecondaryColor}" />
+                <Setter Property="FontFamily" Value="OpenSansRegular" />
+                <Setter Property="BackgroundColor" Value="{DynamicResource PrimaryColor}" />
+                <Setter Property="Padding" Value="14,10" />
+            </Style>
+        </ResourceDictionary>
+    </Application.Resources>
+</Application>
